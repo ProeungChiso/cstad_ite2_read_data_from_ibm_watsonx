@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: presto_read_data_from_watson_x_data
+  datasource:
+    url: jdbc:presto://<host>:<port>?SSL=true
+    username: <api-keyword>
+    password: <api-key>
+    driver-class-name: com.facebook.presto.jdbc.PrestoDriver
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.data.jdbc.JdbcRepositoriesAutoConfiguration
+
+logging:
+  level:
+    org.springframework: DEBUG
+
+
